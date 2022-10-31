@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_fp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FORMULIR PENDAFTARAN"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:textSize="17dp"/>
+
+    <EditText
+        android:id="@+id/et_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Lengkap"
+
+        android:layout_below="@id/tv_fp"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:id="@+id/et_np"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nomor Pendaftaran"
+        android:layout_below="@id/et_nama"
+        android:textSize="15dp"/>
+
+    <Spinner
+        android:id="@+id/sp_jp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_np"
+        android:entries="@array/jalur" />
+    <CheckBox
+        android:id="@+id/cb_conf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/sp_jp"
+        android:text="Konfirmasi Daftar"/>
+
+    <Button
+        android:id="@+id/btn_dftr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daftar"
+
+        android:layout_below="@id/cb_conf"/>
+
+
+</RelativeLayout>
